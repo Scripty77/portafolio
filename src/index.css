@@ -1,0 +1,163 @@
+:root {
+  font-family: "Miracode", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  background-color: #333333;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('src/assets/fondo_lain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: Miracode;
+  src: url(/src/Miracode.ttf);
+}
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  animation: move 15s infinite;
+}
+
+
+.container .text {
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.tecnologies {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-top: -17.2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 30%;
+  margin-right: -10px;
+  color: black;
+  animation: move 10s infinite;
+}
+
+.tecnologies img {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 70%;
+  margin: 10px;
+  color: #000000;
+}
+
+.text img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+.container-book {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  color: #000000;
+}
+
+.books-content img {
+  height: 60px;
+  justify-content: center;
+}
+
+.container-proyects {
+  display: flex;
+  flex-direction:column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  color: #000000;
+}
+
+.container-group {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  justify-content:center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 20px;
+  animation: jump 15s infinite;
+}
+
+
+.custom-shape-divider-top-1737638839 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1737638839 svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 94px;
+}
+
+.custom-shape-divider-top-1737638839 .shape-fill {
+  fill: #fdc1ad80;
+}
+
+.custom-shape-divider-bottom-1737639034 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737639034 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 66px;
+}
+
+.custom-shape-divider-bottom-1737639034 .shape-fill {
+  fill: #fdc1ad80;
+}
+
+/*animation*/ 
+@keyframes jump {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(250px);
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(150px);
+  }
+}
